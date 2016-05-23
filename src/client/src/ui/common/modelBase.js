@@ -39,7 +39,7 @@ export default class ModelBase extends DisposableBase {
 
   canPopout(){
     let browser = new userAgentParser().getBrowser().name;
-    return browser.indexOf('IE') !== -1;
+    return browser.indexOf('IE') === -1;
   }
 
   get modelId():string {
